@@ -1,50 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tulip OB/GYN - Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tulip OB/GYN — Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tulip OB/GYN</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="appointment.html">Appointment</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="" alt="Tulip logo" class="logo" aria-hidden="true"/>
+        <div>
+          <h1>Tulip OB/GYN</h1>
+          <p class="tagline">Compassionate, advanced women's healthcare — Dr. Mohammed Alnakeeb, MD</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="mailto:contact@tulipobgyn.example" class="phone-link">📞 (973) 807-2727</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Compassionate Women's Healthcare</h2>
-    <p>Welcome to Tulip OB/GYN, led by Dr. Mohammed Alnakeeb — where patient care, comfort, and trust come first.</p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Personalized care for every stage of life</h2>
+          <p>At Tulip OB/GYN we provide evidence-based obstetric and gynecologic care in a warm, patient-first environment. From wellness visits to prenatal care and minor procedures — you're in experienced hands.</p>
+          <p class="cta-row">
+            <a class="btn" href="appointment.html">Book an Appointment</a>
+            <a class="btn ghost" href="about.html">Meet Dr. Alnakeeb</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- optional: add clinic photo or decorative SVG -->
+        </div>
+      </div>
+    </section>
 
-  <section class="intro">
-    <h3>About Tulip OB/GYN</h3>
-    <p>Tulip OB/GYN provides personalized obstetrics and gynecology services for women of all ages. Our mission is to deliver high-quality, compassionate care in a supportive environment.</p>
-  </section>
+    <section class="services container">
+      <h3>Our Services</h3>
+      <div class="services-grid">
+        <article>
+          <h4>Obstetrics / Prenatal Care</h4>
+          <p>Comprehensive prenatal visits, birth planning, and postnatal follow-up.</p>
+        </article>
+        <article>
+          <h4>Gynecology</h4>
+          <p>Annual exams, contraception counseling, HPV screening and colposcopy.</p>
+        </article>
+        <article>
+          <h4>Minimally Invasive Procedures</h4>
+          <p>In-office procedures, surgical referrals, and follow-up care.</p>
+        </article>
+        <article>
+          <h4>Wellness & Counseling</h4>
+          <p>Menopause care, fertility referrals, and patient education.</p>
+        </article>
+      </div>
+    </section>
 
-  <section class="reviews">
-    <h3>Patient Reviews</h3>
+    <section class="hours container">
+      <h3>Clinic Hours & Contact</h3>
+      <div class="hours-grid">
+        <div>
+          <p><strong>Address</strong><br/>
+          991 Main St, Suite 2B<br/>
+          Paterson, NJ 07503<br/>
+          <a href="https://www.google.com/maps?q=991+Main+St+Paterson+NJ&output=embed" target="_blank" rel="noopener">View on Google Maps →</a></p>
 
-    <div class="review-box">
-      <p>“Dr. Nakeeb is extremely caring and patient. He listens to every concern.”</p>
+          <p><strong>Phone</strong><br/>
+          <a href="tel:+19738072727">(973) 807-2727</a></p>
+        </div>
+        <div>
+          <p><strong>Hours</strong></p>
+          <ul class="hours-list">
+            <li>Mon — Thu: 9:00 AM – 6:00 PM</li>
+            <li>Fri: Closed</li>
+            <li>Sat & Sun: Closed</li>
+          </ul>
+          <p class="small">If you need urgent care after hours please call the phone above for instructions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews container">
+      <h3>Patient Reviews</h3>
+      <div class="review-cards">
+        <blockquote class="review">
+          <p>“Dr. Alnakeeb explained everything clearly and made me feel comfortable during my prenatal visits.”</p>
+          <footer>— A. R.</footer>
+        </blockquote>
+
+        <blockquote class="review">
+          <p>“Warm staff and professional care. The clinic was punctual and thorough.”</p>
+          <footer>— S. M.</footer>
+        </blockquote>
+
+        <blockquote class="review">
+          <p>“Highly recommended for women who want a thoughtful, experienced OB/GYN.”</p>
+          <footer>— L. P.</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Tulip OB/GYN</strong><br/>
+        991 Main St, Suite 2B, Paterson, NJ 07503<br/>
+        <a href="tel:+19738072727">(973) 807-2727</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="privacy.html" aria-hidden="true">Privacy</a>
+        <a href="terms.html" aria-hidden="true">Terms</a>
+        <span>© 2025 Tulip OB/GYN</span>
+      </div>
     </div>
-
-    <div class="review-box">
-      <p>“The staff is friendly and the clinic is very clean. Highly recommended!”</p>
-    </div>
-
-    <div class="review-box">
-      <p>“I always feel comfortable and well-guided during every visit.”</p>
-    </div>
-
-  </section>
-
-  <footer>
-    <p>© 2025 Tulip OB/GYN</p>
   </footer>
 </body>
 </html>
