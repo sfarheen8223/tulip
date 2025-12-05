@@ -1,46 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Appointment - Tulip OB/GYN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Appointment — Tulip OB/GYN</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tulip OB/GYN</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="appointment.html">Appointment</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="" alt="Tulip logo" class="logo" aria-hidden="true"/>
+        <div>
+          <h1>Tulip OB/GYN</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="appointment.html" class="active">Appointment</a>
+        <a href="tel:+19738072727" class="phone-link">📞 (973) 807-2727</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="appointment">
-    <h2>Book an Appointment</h2>
+  <main class="container appointment-page">
+    <section class="booking">
+      <h2>Book an Appointment</h2>
+      <p>Please use the form below. You will receive a confirmation email or phone call within 1–2 business days.</p>
 
-    <form>
-      <label>Name:</label>
-      <input type="text" required />
+      <!-- NOTE: Replace action URL with your Formspree / Formsubmit / backend endpoint -->
+      <form id="apptForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required />
 
-      <label>Email:</label>
-      <input type="email" required />
+        <label for="email">Email</label>
+        <input id="email" name="_replyto" type="email" required />
 
-      <label>Phone:</label>
-      <input type="text" required />
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required />
 
-      <label>Preferred Date:</label>
-      <input type="date" required />
+        <label for="reason">Reason for visit</label>
+        <select id="reason" name="reason" required>
+          <option value="">Select</option>
+          <option>New patient consultation</option>
+          <option>Pregnancy / prenatal visit</option>
+          <option>Annual exam / Pap test</option>
+          <option>Follow-up / results</option>
+          <option>Other</option>
+        </select>
 
-      <label>Reason for Visit:</label>
-      <textarea required></textarea>
+        <label for="preferred">Preferred date</label>
+        <input id="preferred" name="preferred_date" type="date" />
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <label for="notes">Notes (symptoms, preferred times)</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
 
-  <footer>
-    <p>© 2025 Tulip OB/GYN</p>
+        <button class="btn" type="submit">Request Appointment</button>
+        <p class="small">By submitting you consent to be contacted by Tulip OB/GYN for scheduling purposes.</p>
+      </form>
+    </section>
+
+    <aside class="map-contact">
+      <h3>Location</h3>
+      <div class="map-wrap">
+        <iframe
+          title="Tulip OB/GYN map"
+          src="https://www.google.com/maps?q=991+Main+St+Paterson+NJ&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-card">
+        <p><strong>Address</strong><br/>
+        991 Main St, Suite 2B<br/>
+        Paterson, NJ 07503</p>
+
+        <p><strong>Phone</strong><br/>
+        <a href="tel:+19738072727">(973) 807-2727</a></p>
+
+        <p><strong>Hours</strong><br/>
+        Mon–Thu: 9:00 AM – 6:00 PM<br/>
+        Fri–Sun: Closed</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Tulip OB/GYN</strong><br/>
+        991 Main St, Suite 2B, Paterson, NJ 07503<br/>
+        <a href="tel:+19738072727">(973) 807-2727</a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" aria-hidden="true">Privacy</a>
+        <a href="terms.html" aria-hidden="true">Terms</a>
+        <span>© 2025 Tulip OB/GYN</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
