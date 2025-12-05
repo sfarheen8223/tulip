@@ -1,31 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Tulip OB/GYN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tulip OB/GYN</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tulip OB/GYN</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="appointment.html">Appointment</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="" alt="Tulip logo" class="logo" aria-hidden="true"/>
+        <div>
+          <h1>Tulip OB/GYN</h1>
+          <p class="tagline">Experienced, compassionate women's care</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="tel:+19738072727" class="phone-link">📞 (973) 807-2727</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>Meet Dr. Mohammed Alnakeeb</h2>
-    <p>Dr. Alnakeeb is an experienced OB/GYN dedicated to providing thoughtful and advanced women’s healthcare. His approach focuses on trust, comfort, and honest communication.</p>
+  <main class="container about-page">
+    <article class="doctor-overview">
+      <div class="doc-photo" aria-hidden="true"></div>
+      <div class="doc-text">
+        <h2>Dr. Mohammed Alnakeeb, MD</h2>
+        <p><strong>Board-certified OB/GYN</strong> with years of experience caring for women at all stages of life. Dr. Alnakeeb emphasizes evidence-based care, respectful communication, and individualized treatment plans.</p>
 
-    <h3>Our Team</h3>
-    <p>Our compassionate and professional staff ensures every patient receives timely care and support throughout their visit.</p>
-  </section>
+        <h4>Qualifications & Training</h4>
+        <ul>
+          <li>MD — (Medical School name placeholder)</li>
+          <li>Residency in Obstetrics & Gynecology</li>
+          <li>Board-certified in OB/GYN</li>
+          <li>Member — American College of Obstetricians and Gynecologists</li>
+        </ul>
 
-  <footer>
-    <p>© 2025 Tulip OB/GYN</p>
+        <h4>Clinical Interests</h4>
+        <p>Prenatal care, minimally invasive gynecologic procedures, menopause management, and patient education focused on reproductive wellness.</p>
+      </div>
+    </article>
+
+    <section class="team">
+      <h3>Our Team</h3>
+      <p>Our friendly clinical and administrative staff work together to make each visit efficient and comfortable. We prioritize on-time visits, clear communication, and continuity of care.</p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="avatar" aria-hidden="true"></div>
+          <h5>Clinic Nurse</h5>
+          <p>Experienced nurse providing patient education and care coordination.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar" aria-hidden="true"></div>
+          <h5>Office Manager</h5>
+          <p>Administrative lead for scheduling, billing, and patient support.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar" aria-hidden="true"></div>
+          <h5>Medical Assistant</h5>
+          <p>Assists with vitals, labs, and in-office procedures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <h3>Our Mission</h3>
+      <p>To provide respectful, evidence-based women's healthcare in a compassionate environment where patients are partners in their care.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Tulip OB/GYN</strong><br/>
+        991 Main St, Suite 2B, Paterson, NJ 07503<br/>
+        <a href="tel:+19738072727">(973) 807-2727</a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" aria-hidden="true">Privacy</a>
+        <a href="terms.html" aria-hidden="true">Terms</a>
+        <span>© 2025 Tulip OB/GYN</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
